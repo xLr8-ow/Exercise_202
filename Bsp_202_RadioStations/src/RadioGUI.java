@@ -1,9 +1,11 @@
 
 public class RadioGUI extends javax.swing.JFrame {
 
+    SenderTableModel model = new SenderTableModel();
     
     public RadioGUI() {
         initComponents();
+        table.setModel(model);
     }
 
     @SuppressWarnings("unchecked")
@@ -16,8 +18,6 @@ public class RadioGUI extends javax.swing.JFrame {
         bandanzeigen = new javax.swing.JMenuItem();
         jScrollPane1 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
-
-        popupmenu.setComponentPopupMenu(popupmenu);
 
         hinzufügen.setText("hinzufügen");
         popupmenu.add(hinzufügen);
@@ -41,6 +41,7 @@ public class RadioGUI extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        table.setComponentPopupMenu(popupmenu);
         jScrollPane1.setViewportView(table);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
