@@ -2,12 +2,12 @@
 public class Sender {
     private String sendername;
     private double frequenz;
-    private boolean isAM;
+    private String band;
 
-    public Sender(String sendername, double frequenz, boolean isAM) {
+    public Sender(String sendername, double frequenz, String band) {
         this.sendername = sendername;
         this.frequenz = frequenz;
-        this.isAM = isAM;
+        this.band = band;
     }
 
     public String getSendername() {
@@ -18,9 +18,8 @@ public class Sender {
         return frequenz;
     }
 
-    public boolean isIsAM() {
-        return isAM;
-    }
-    
+    public String getBand() {
+        return band;
+    }    
     
 }

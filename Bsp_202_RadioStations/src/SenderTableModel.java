@@ -6,7 +6,7 @@ public class SenderTableModel extends AbstractTableModel {
 
     private ArrayList<Sender> sender = new ArrayList<>();
 
-    private static String[] colNames = {"Sender", "Frequenz"};
+    private static String[] colNames = {"Sender", "Frequenz", "Band"};
 
     @Override
     public int getRowCount() {
