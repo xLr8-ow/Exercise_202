@@ -23,5 +23,11 @@ public class SenderTableModel extends AbstractTableModel {
         Sender s = sender.get(rowIndex);
         return s;
     }
+    
+    public void add(Sender s)
+    {
+        sender.add(sender.size()-1, s);
+        fireTableRowsInserted(sender.size()-1, sender.size()-1);
+    }
 
 }
