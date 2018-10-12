@@ -10,28 +10,23 @@ public class RadioGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenu2 = new javax.swing.JMenu();
+        popupmenu = new javax.swing.JPopupMenu();
         hinzufügen = new javax.swing.JMenuItem();
         bandverstecken = new javax.swing.JMenuItem();
         bandanzeigen = new javax.swing.JMenuItem();
         jScrollPane1 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
 
-        jMenu2.setText("jMenu2");
+        popupmenu.setComponentPopupMenu(popupmenu);
 
         hinzufügen.setText("hinzufügen");
-        hinzufügen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hinzufügenActionPerformed(evt);
-            }
-        });
-        jMenu2.add(hinzufügen);
+        popupmenu.add(hinzufügen);
 
         bandverstecken.setText("Band verstecken");
-        jMenu2.add(bandverstecken);
+        popupmenu.add(bandverstecken);
 
         bandanzeigen.setText("Band anzeigen");
-        jMenu2.add(bandanzeigen);
+        popupmenu.add(bandanzeigen);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,16 +60,6 @@ public class RadioGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void hinzufügenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hinzufügenActionPerformed
-        SenderDlg dialog = new SenderDlg(this, true);
-        
-        dialog.setVisible(true);
-        
-        if(dialog.isOk()) {
-            
-        }
-    }//GEN-LAST:event_hinzufügenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -115,8 +100,8 @@ public class RadioGUI extends javax.swing.JFrame {
     private javax.swing.JMenuItem bandanzeigen;
     private javax.swing.JMenuItem bandverstecken;
     private javax.swing.JMenuItem hinzufügen;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JPopupMenu popupmenu;
     private javax.swing.JTable table;
     // End of variables declaration//GEN-END:variables
 }
